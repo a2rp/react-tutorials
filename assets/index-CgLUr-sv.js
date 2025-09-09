@@ -1,4 +1,4 @@
-import{d,j as e}from"./index-Csw-7IIX.js";const n={Wrapper:d.div`
+import{d,j as e}from"./index-DkarTETc.js";const n={Wrapper:d.div`
         padding: 24px;
 
         h1 {
