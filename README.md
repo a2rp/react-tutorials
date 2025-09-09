@@ -2,18 +2,14 @@
 
 Production-minded React tutorial series focused on fundamentals → real-world patterns → portfolio-ready capstones.
 
-**Live:** https://a2rp.github.io/a2rp-react-tuts/  
-**Repo:** https://github.com/a2rp/a2rp-react-tuts
+**Live:** https://a2rp.github.io/react-tutorials/  
+**Repo:** https://github.com/a2rp/react-tutorials
 
-## What’s inside
+## Project notes
 
-Core & JSX • State • Effects • Refs • Memo & Re-renders • Context/Reducer • Custom Hooks • Routing • Data (React Query) • Forms & Validation • Styling/Design System • Accessibility • Performance & Virtualization • React 18 (Transitions/Suspense) • Testing & Observability • Deploy/SEO • Capstones (Admin Dashboard, AI Features, Design System)
-
-## How to use
-
-1. Open a module and pick a lesson.
-2. Read the brief → do the mini-lab → tick the checklist.
-3. Log a short case study: **Problem → Decision → Result** (add metrics when relevant).
+-   Vite **base** is set to **`/react-tutorials/`** (for GitHub Pages).
+-   Use BrowserRouter with correct basename or a 404 fallback for deep links.
+-   Keep lessons concise; prefer practical checklists over long theory.
 
 ## Outcomes
 
@@ -24,8 +20,8 @@ Core & JSX • State • Effects • Refs • Memo & Re-renders • Context/Redu
 
 ## Author
 
-**Ashish Ranjan (a2rp)** — Portfolio: https://ashishranjan.net • GitHub: https://github.com/a2rp • LinkedIn: https://www.linkedin.com/in/aashishranjan/
+**Ashish Ranjan**
 
-## License
-
-MIT (add a LICENSE file)
+-   Portfolio: https://ashishranjan.net
+-   GitHub: https://github.com/a2rp
+-   LinkedIn: https://www.linkedin.com/in/aashishranjan/
