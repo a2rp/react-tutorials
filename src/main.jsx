@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
     <>
-        <BrowserRouter basename='/react-tuts'>
+        <BrowserRouter basename='/react-tutorials'>
             <App />
         </BrowserRouter>
     </>,

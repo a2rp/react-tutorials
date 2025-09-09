@@ -1,28 +1,31 @@
-# React Mini Apps Suite
+# React Tutorials (Hands-on)
 
-> Repo slug: **react-mini-apps-suite**  
-> A router-based collection of small, clean **React** apps-built with **Vite**, **React Router**, and **styled-components**. Every app is frontend-only (no backend), dark-theme friendly, and persists to **LocalStorage**. Clone, run, ship. 🚀
+Production-minded React tutorial series focused on fundamentals → real-world patterns → portfolio-ready capstones.
 
-**Live:** https://a2rp.github.io/react-mini-apps-suite/
+**Live:** https://a2rp.github.io/a2rp-react-tuts/  
+**Repo:** https://github.com/a2rp/a2rp-react-tuts
 
----
+## What’s inside
 
-## Tech
+Core & JSX • State • Effects • Refs • Memo & Re-renders • Context/Reducer • Custom Hooks • Routing • Data (React Query) • Forms & Validation • Styling/Design System • Accessibility • Performance & Virtualization • React 18 (Transitions/Suspense) • Testing & Observability • Deploy/SEO • Capstones (Admin Dashboard, AI Features, Design System)
 
--   React 18, React Router DOM
--   Vite (fast dev/build)
--   styled-components
--   GitHub Pages deploy (SPA 404 fallback)
+## How to use
 
----
+1. Open a module and pick a lesson.
+2. Read the brief → do the mini-lab → tick the checklist.
+3. Log a short case study: **Problem → Decision → Result** (add metrics when relevant).
 
-## Getting Started
+## Outcomes
 
-> Requires Node 18+
+-   Clean architecture & predictable state
+-   Accessible, resilient UX
+-   Data-layer mastery (cache, retries, optimistic)
+-   Measurable performance improvements
 
-```bash
-git clone https://github.com/a2rp/react-mini-apps-suite.git
-cd react-mini-apps-suite
-npm i
-npm run dev
-```
+## Author
+
+**Ashish Ranjan (a2rp)** — Portfolio: https://ashishranjan.net • GitHub: https://github.com/a2rp • LinkedIn: https://www.linkedin.com/in/aashishranjan/
+
+## License
+
+MIT (add a LICENSE file)

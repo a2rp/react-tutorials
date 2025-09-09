@@ -23,7 +23,7 @@ const App = () => {
                     <Styled.NavLinkWrapper onClick={handleDisplayNav}>
                         <MdMenuOpen size={20} />
                     </Styled.NavLinkWrapper>
-                    <Styled.Heading><NavLink to="/">a2rp: ReactJS Mini Apps</NavLink></Styled.Heading>
+                    <Styled.Heading><NavLink to="/">a2rp: ReactJS Tuts</NavLink></Styled.Heading>
                 </Styled.Header>
                 <Styled.Main>
                     <Styled.NavWrapper className={`${displayNav ? "active" : ""}`}>
