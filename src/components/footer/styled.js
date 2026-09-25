@@ -1,57 +1,61 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-    background-color: #010409;
-    color: #aaa;
-    margin-top: 50px;
-    overflow: hidden;
-    padding: 50px;
-    @media (width<900px) {
-        padding: 15px;
-    }
+const Wrapper = styled.footer`,
+    margin-top: 24px;
+    padding: 28px 0 4px;
+    border-top: 1px solid #26384e;
 `;
 
-const Heading = styled.h1`
-    margin-bottom: 30px;
+const Intro = styled.div`,
+    display: grid;
+    gap: 8px;
 `;
 
-const Row = styled.div`
-    /* border-bottom: 1px solid #ccc; */
+const Heading = styled.h2`,
+    color: #eaf3ff;
+    font-size: 23px;
+`;
+
+const Description = styled.p`,
+    color: #8191a6;
+    font-size: 13px;
+`;
+
+const SocialLinks = styled.div`,
     display: flex;
-    gap: 15px;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 10px 0;
-
-    &:hover {
-        background-color: #333;
-        /* color: #000;
-        a {
-            color: #000;
-        } */
-    }
-`;
-const Col1 = styled.div`
-    flex: 0 0 80px;
-`;
-const Col2 = styled.div`
-    /* flex: 1 1 100%; */
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
 
     a {
-        color: #aaa;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        text-decoration: none;
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #2d4057;
+        border-radius: 9px;
+        color: #8fa3bb;
+        transition: border-color 160ms ease, box-shadow 160ms ease, color 160ms ease;
+
         &:hover {
-            text-decoration: underline;
+            border-color: #70b1ff;
+            color: #70b1ff;
+            box-shadow: 0 8px 18px rgba(35, 122, 229, 0.16);
         }
     }
 `;
 
-export const Styled = {
-    Wrapper,
-    Heading,
-    Row,
-    Col1,
-    Col2,
-};
+const Copyright = styled.p`,
+    margin: 22px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #1d2c3d;
+    color: #718196;
+    font-size: 12px;
+
+    a {
+        color: #a9cfff;
+        font-weight: 700;
+    }
+`;
+
+export const Styled = { Wrapper, Intro, Heading, Description, SocialLinks, Copyright };

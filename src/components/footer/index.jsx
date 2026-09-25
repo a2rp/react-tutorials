@@ -1,97 +1,66 @@
+import { createElement } from "react";
+import {
+    FaCodepen,
+    FaCoffee,
+    FaEnvelope,
+    FaFacebook,
+    FaGithub,
+    FaGlobe,
+    FaHandHoldingHeart,
+    FaLinkedin,
+    FaPatreon,
+    FaYoutube,
+} from "react-icons/fa";
 import { Styled } from "./styled";
 
+const links = [
+    { label: "Portfolio", href: "https://www.ashishranjan.net/", icon: FaGlobe },
+    { label: "GitHub", href: "https://github.com/a2rp", icon: FaGithub },
+    { label: "CodePen", href: "https://codepen.io/ash1198", icon: FaCodepen },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/aashishranjan", icon: FaLinkedin },
+    { label: "Facebook", href: "https://www.facebook.com/theash.ashish/", icon: FaFacebook },
+    { label: "YouTube", href: "https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1", icon: FaYoutube },
+    { label: "Email", href: "mailto:ash.ranjan09@gmail.com", icon: FaEnvelope },
+    { label: "Support", href: "https://a2rp-donation-page.netlify.app/", icon: FaHandHoldingHeart },
+    { label: "Buy Me a Coffee", href: "https://buymeacoffee.com/a2rp", icon: FaCoffee },
+    { label: "Patreon", href: "https://www.patreon.com/a2rp", icon: FaPatreon },
+];
+
 export default function Footer() {
+    const year = new Date().getFullYear();
+
     return (
-        <>
-            <Styled.Wrapper>
-                <Styled.Heading>About Developer</Styled.Heading>
-                <Styled.Row>
-                    <Styled.Col1>Name</Styled.Col1>
-                    <Styled.Col2>Ashish Ranjan</Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Phone</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="tel:+918123747965"
-                        >+91 8123747965</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Email</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="mailto:ash.ranjan09@gmail.com"
-                        >ash.ranjan09@gmail.com</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Nationality</Styled.Col1>
-                    <Styled.Col2>The Republic of India</Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Website</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="https://www.ashishranjan.net/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >https://www.ashishranjan.net/</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Old Website</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="http://www.ashishranjan.in/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >http://www.ashishranjan.in/</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>Facebook</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="https://www.facebook.com/theash.ashish/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >https://www.facebook.com/theash.ashish/</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>LinkedIn</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="https://www.linkedin.com/in/aashishranjan/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >https://www.linkedin.com/in/aashishranjan/</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>YouTube</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ</a>
-                    </Styled.Col2>
-                </Styled.Row>
-                <Styled.Row>
-                    <Styled.Col1>GitHub</Styled.Col1>
-                    <Styled.Col2>
-                        <a
-                            href="https://github.com/a2rp"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >https://github.com/a2rp</a>
-                    </Styled.Col2>
-                </Styled.Row>
-            </Styled.Wrapper>
-        </>
+        <Styled.Wrapper>
+            <Styled.Intro>
+                <Styled.Heading>Keep learning, keep building.</Styled.Heading>
+                <Styled.Description>
+                    React tutorials and practical notes for steady frontend progress.
+                </Styled.Description>
+            </Styled.Intro>
+            <Styled.SocialLinks aria-label="External links">
+                {links.map(({ label, href, icon }) => (
+                    <a
+                        key={label}
+                        href={href}
+                        title={label}
+                        aria-label={label}
+                        target={href.startsWith("http") ? "_blank" : undefined}
+                        rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    >
+                        {createElement(icon)}
+                    </a>
+                ))}
+            </Styled.SocialLinks>
+            <Styled.Copyright>
+                Copyright © {year}{" "}
+                <a
+                    href="https://www.ashishranjan.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ashish Ranjan
+                </a>
+            </Styled.Copyright>
+        </Styled.Wrapper>
     );
 }
-
-
