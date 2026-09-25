@@ -1,0 +1,1 @@
+import{j as o,N as t,e}from"./index-xaUbj3Bk.js";const n=()=>o.jsxs("div",{className:"not-found",children:[o.jsx("p",{className:"not-found-code",children:"404"}),o.jsx("h1",{children:"Page not found"}),o.jsx("p",{children:"The route is not part of this tutorial collection yet."}),o.jsxs(t,{to:"/",children:[o.jsx(e,{}),"Return to overview"]})]});export{n as default};
