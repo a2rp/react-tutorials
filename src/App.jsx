@@ -31,7 +31,7 @@ const App = () => {
 
                 <Styled.Heading>
                     <NavLink to="/" aria-label="React tutorials home">
-                        <img src="/logo.png" alt="" />
+                        <img src={import.meta.env.BASE_URL + "logo.png"} alt="" />
                         <span>
                             <strong>React Tutorials</strong>
                             <small>Practical learning notes</small>
